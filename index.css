@@ -6,15 +6,30 @@ body{
     background-color: #98A886;
     font-style: italic;
     color: #363457;
-    
- 
-    /*Formatting*/
+
+    /*Box-Model Formatting*/
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    text-align: center;
 }
 
 #footer, #header
 {
-    background-color: white;
-    height: 10px;
+    background-color: #FDF5D5;
+    font-size: large;
+    height: 40px;
     width: 100%;
-}    
+    padding: 0px;
+}
+
+/*Navigation Bar CSS*/
+.topnav
+{
+    background-color: #FDF5D5;
+}
+.topnav a
+{
+    padding-right: 150px;
+}
 
