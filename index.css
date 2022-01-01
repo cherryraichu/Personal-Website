@@ -1,35 +1,52 @@
-/**Webpage color scheme: 
-https://coolors.co/c4a69d-98a886-465c69-363457-735290 **/
-
 body{
-    /*Color Scheme*/
-    background-color: #98A886;
-    font-style: italic;
+    background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
+    height: 100vh;
+    font-family: 'Comfortaa', cursive;
+    font-family: 'Quicksand', sans-serif;
+    /*font-family: 'Roboto Mono', monospace;*/
     color: #363457;
-
-    /*Box-Model Formatting*/
-    margin-top: 0px;
-    margin-left: 0px;
-    margin-right: 0px;
     text-align: center;
 }
 
-#footer, #header
-{
-    background-color: #FDF5D5;
-    font-size: large;
-    height: 40px;
+#header, #footer, .topnav
+{  
+    background-color: whitesmoke;
     width: 100%;
-    padding: 0px;
+    left: 0px;
+    position: fixed;
+}
+#footer
+{
+    height: 40px;
+    bottom: 0px;
+}
+
+#header
+{
+    top: 0px;
+    height: 40px;
+    font-size: large;
+    font-weight: bold;
 }
 
 /*Navigation Bar CSS*/
 .topnav
 {
-    background-color: #FDF5D5;
+    top: 40px;
 }
 .topnav a
 {
     padding-right: 150px;
 }
+
+/*Content CSS*/
+#home_text
+{
+    top: 80px;
+    height: 20px;
+    position: fixed;
+
+    background-color: whitesmoke;
+}
+
 
