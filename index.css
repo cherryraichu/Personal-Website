@@ -1,14 +1,15 @@
 body{
-    background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
+    background-image: url("plantsbackground.png");
+    background-repeat: no-repeat;
+    background-size: cover;
     height: 100vh;
-    font-family: 'Comfortaa', cursive;
-    font-family: 'Quicksand', sans-serif;
-    /*font-family: 'Roboto Mono', monospace;*/
+
+    font-family: 'Poppins', sans-serif;
     color: #363457;
     text-align: center;
 }
 
-#header, #footer, .topnav
+#footer, .topnav
 {  
     background-color: whitesmoke;
     width: 100%;
@@ -21,22 +22,20 @@ body{
     bottom: 0px;
 }
 
-#header
-{
-    top: 0px;
-    height: 40px;
-    font-size: large;
-    font-weight: bold;
-}
-
 /*Navigation Bar CSS*/
 .topnav
 {
-    top: 40px;
+    top: 0px;
+    padding-top: 20px;
+    padding: 20px;
 }
 .topnav a
 {
     padding-right: 150px;
+    font-weight: 700;
+    text-decoration: none;
+    cursor: pointer;
+    color: #000000;
 }
 
 /*Content CSS*/
@@ -45,6 +44,7 @@ body{
     top: 80px;
     height: 20px;
     position: fixed;
+    text-align: center;
 
     background-color: whitesmoke;
 }
