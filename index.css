@@ -1,25 +1,27 @@
 body{
     background-image: url("plantsbackground.png");
-    background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
 
-    font-family: Roboto Slab, Arial, sans-serif;
-   /* font-family: 'Poppins', sans-serif;*/
+    font-family: monospace;
     color: #363457;
-    text-align: center;
+    font-size: 2vh;
 }
 
+/*Footer and Top-Nav Bar CSS*/
 #footer, .topnav
 {  
     background-color: whitesmoke;
     width: 100%;
     left: 0px;
     position: fixed;
+    text-align: center;    
 }
 #footer
 {
-    height: 40px;
+    height: 6vh;
+    margin: 0px;
+    padding: 0px;
     bottom: 0px;
 }
 
@@ -27,8 +29,8 @@ body{
 .topnav
 {
     top: 0px;
-    padding-top: 20px;
-    padding: 20px;
+    padding-top: 2vh;
+    padding: 2vh;
 }
 .topnav a
 {
@@ -39,55 +41,88 @@ body{
     cursor: pointer;
     color: #000000;
 }
+#my_work_drop_down
+{
+
+}
 
 /*Content CSS*/
 .home_content
 {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    color: #363457;
+    justify-content: center;
+    position: center;
+    margin-top: 20vh;
+    gap: 2vw;
+      
 }
 
-
-
-.polaroid_descr /*Need to make this responsive, AND add the css block for the p*/
-{ /*can't stretch horizontally, size needs to scale --> maybe need to modify p*/
-    width: 50vw;
-    max-width: inherit;
+/*Profile Picture Polaroid and Description Box CSS*/ 
+.polaroid_descr_box 
+{ 
     background-color: whitesmoke;
-    box-shadow: 2px 4px 8px 3px rgb(175, 174, 174);
+    box-shadow: 2px 4px 8px 3px rgb(146, 144, 144);
     order: 2;
-    margin-top: 100px;
     border-radius: 15px;
+    max-width: inherit;
+    height: auto;
+    padding-left: 5vh;
+    padding-right: 5vh;
 }
-
-.polaroid_descr p
+#descr_text
 {
-
+    color: #272928;
+    text-align: left;
 }
 
 .polaroid_profile 
 {
     order: 1;
     height: auto;
-    
     background-color:whitesmoke;
-    box-shadow: 2px 4px 8px 3px rgb(175, 174, 174);
+    box-shadow: 2px 4px 8px 3px rgb(146, 144, 144);
     border-radius: 15px;
-    
     border: solid whitesmoke 20px;
-    box-sizing: border-box;
-    margin-top: 100px;
 }
 
 .polaroid_pic img { 
     border-radius: 20px 20px 20px 20px;
     width: 100%;
-    max-width: inherit;
-    height: 100%;
+    height: auto;
 }
 
+/*CSS for < 600px Width Screens (Mobile,Tablets, etc)*/
+@media screen and (max-width: 600px)
+{
+    body{
+        font-size: 2vw;
+    }
+    .topnav a
+    {
+        display: block;
+    }
+    .home_content
+    {
+        flex-direction: column;
+    }
+    .polaroid_descr_box .polaroid_profile
+    {
+        text-align: center;
+        width: fit-content;
+    }
+    .polaroid_profile img
+    {
+        height: 40vw;
+        width: 40vw;
+        /*need to center profile pic, will get to later*/   
+    }
+    .polaroid_profile
+    {
+        width: 40vw;
+    }
+}
 
+/*CSS for > ___ Screens (Some elements need to be modified for responsiveness)*/
 
 

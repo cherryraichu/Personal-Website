@@ -1,0 +1,22 @@
+Current Webpage Problems
+- Responsiveness
+    https://www.pixelconverter.com/px-to-vh-converter/
+    https://www.w3schools.com/css/css_units.asp
+- Where I'm using Javascript (animations?)
+    - Add a dropdown bar for my work to add option to page for downloading my resume
+- Webpage text (I need to add it)
+
+
+
+Responsiveness Bugs
+
+- Laptop View >600 screen width
+  Issues with spacing of boxes with widths < 770px wide
+
+  - Mobile View < 600 screen width
+  Issues with text boxes being cut off by screen
+  Nav bar should be changed so its in a vertical format
+
+    About Me
+    My Work
+    Contact Me

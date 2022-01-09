@@ -1,20 +1,16 @@
 <!DOCTYPE html>
-<html>
+<html lang = "en">
     <!--* Webpage Metadata*-->
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1"> <!--*For mobile responiveness*-->
         <title>Annie Zhou</title>
         
         <!--*Importing the CSS and Javascript Code *-->
-        <style>
-          @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
-        </style>
         <link rel = "stylesheet" href = "index.css">
         <script type = "text/Javascript" src = "index.js"></script>
 
-        <!--* Cross Browser Tags (Need to refresh how this works)*-->
-        <!--* Configurations for light/dark mode*-->
-        <!-- Mobile Configurations-->
+        <!--*(WIP) Cross Browser Tags*-->
     </head>
 
     <!--* Webpage Contents *-->
@@ -22,22 +18,29 @@
         <div class = "topnav">
             <nav>
                 <a id = "about_me" href="index.html"> About Me</a>
-                <a id = "my_work" href="mywork.html"> My Work </a>
+                <a id = "my_work" href="mywork.html"> <button id = "my_work_dd_btn" onclick="excMyWorkDD()">My Work</button></a>
+                   <!--* <div id = "my_work_dd" class="my_work_dd_content">
+                        <a>Resume Download</a>
+                        <a>Experience/Projects</a>
+                    </div> -->
                 <a id = "contact" href="contact.html"> Contact Me </a>
             </nav>
         </div>
        
         <div class="home_content">
 
-            <div class="polaroid_descr">
-                <p id = "home_text"> Last Updated: December 2021</p>
+            <div class="polaroid_descr_box">
+                <div id="descr_text"> <!--Might want to change this to a class later--> 
+                    <pre>Last Updated: December 2021<br><br><br>Hello, my name is Annie Zhou!</pre>
+                    <pre>I'm an aspiring SWE and sophomore Computer Science student<br><br>at the University of Maryland, College Park.</pre>
+                    <pre>Some of my interests of study are web-development and computer graphics</pre>
+                </div>
             </div>
 
             <div class = "polaroid_profile">
                 <img id = "profile_pic" title = "Profile Picture of Annie Zhou" alt = "Profile Picture of Annie Zhou" 
-                src="profile.jpg" height= 250px width=250px> 
+                src="profile.jpg" height= 225vh width=225vw> 
             </div>    
-            
         </div>     
 
         <footer id = "footer"></footer>
