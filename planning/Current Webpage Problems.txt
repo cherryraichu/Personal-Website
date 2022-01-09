@@ -1,11 +1,15 @@
 Current Webpage Problems
+
+Still have responsiveness bugs for manipulating vertical height of index.html
+Finishing Form
+Finshing dropdown
+
 - Responsiveness
     https://www.pixelconverter.com/px-to-vh-converter/
     https://www.w3schools.com/css/css_units.asp
 - Where I'm using Javascript (animations?)
     - Add a dropdown bar for my work to add option to page for downloading my resume
 - Webpage text (I need to add it)
-
 
 
 Responsiveness Bugs

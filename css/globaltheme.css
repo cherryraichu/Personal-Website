@@ -1,0 +1,47 @@
+body{
+    background-image: url("/assets/plantsbackground.png");
+    background-size: cover;
+    height: 100vh;
+
+    font-family: monospace;
+    color: #363457;
+    font-size: 2vh;
+}
+
+/*Footer and Top-Nav Bar CSS*/
+#footer, .topnav
+{  
+    background-color: whitesmoke;
+    width: 100%;
+    left: 0px;
+    position: fixed;
+    text-align: center;    
+}
+#footer
+{
+    height: 6vh;
+    margin: 0px;
+    padding: 0px;
+    bottom: 0px;
+}
+
+/*Navigation Bar CSS*/
+.topnav
+{
+    top: 0px;
+    padding-top: 2vh;
+    padding: 2vh;
+}
+.topnav a
+{
+    margin-left: 50px;
+    margin-right: 50px;
+    font-weight: 700;
+    text-decoration: none;
+    cursor: pointer;
+    color: #000000;
+}
+#my_work_drop_down
+{
+
+}

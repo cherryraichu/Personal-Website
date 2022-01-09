@@ -1,0 +1,16 @@
+
+/*CSS for Content Specific to Contact Me Page*/
+.contact_form_group
+{
+
+    display: flex;
+    flex-direction: column;
+    margin-top: 20vh;
+    background-color: whitesmoke;
+    box-shadow: 2px 4px 8px 3px rgb(146, 144, 144);
+    border-radius: 15px;
+    position: center;
+    width: 75vh;
+    padding: 5vh;
+
+}
