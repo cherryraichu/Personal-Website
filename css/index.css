@@ -49,13 +49,6 @@
 /*CSS for < 600px Width Screens (Mobile,Tablets, etc)*/
 @media screen and (max-width: 600px)
 {
-    body{
-        font-size: 2vw;
-    }
-    .topnav a
-    {
-        display: block;
-    }
     .home_content
     {
         flex-direction: column;

@@ -34,14 +34,54 @@ body{
 }
 .topnav a
 {
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-left: 10vw;
+    margin-right: 10vw;
     font-weight: 700;
     text-decoration: none;
     cursor: pointer;
     color: #000000;
 }
-#my_work_drop_down
-{
 
+#mywork_dd_btn
+{
+    font-family: monospace;
+    color: #000000;
+    font-size: 2vh;
+    background-color: whitesmoke;
+    border: none;
+    font-weight: 700;
+}
+
+#mywork_dd
+{
+    background-color: rgb(146, 144, 144);
+    position: fixed;
+    margin-top: 0;
+    padding-top: 0;
+    top: 6.5vh;
+    left: 42vw;
+    width: 17vw;
+    border-radius: 5px;
+}
+
+#mywork_dd a
+{
+    display: block;
+}
+
+/*This is not working for some reason*/
+/*CSS for < 600px Width Screens (Mobile,Tablets,etc)*/
+@media screen and (max-width:600px)
+{
+    body{
+        font-size: 2vw;
+    }
+    .topnav a
+    {
+        display: block;
+    }
+    #mywork_dd 
+    {
+        font-size: 2vw;
+    }
 }
