@@ -9,40 +9,50 @@
         <link rel = "stylesheet" type = "text/css" href = "/css/globaltheme.css">
         <link rel = "stylesheet" type = "text/css" href = "/css/contact.css">
         <script type = "text/Javascript" src = "/js/global.js"></script>
+        <script type= "text/Javascript" src = "/js/contact.js"></script>
     </head>
 
     <!--* Webpage Contents*-->
     <body>
         <div class = "topnav">
             <nav>
-                <a id = "about_me" href="index.html"> About Me</a>
-                <a id = "my_work" href="mywork.html"> My Work </a>
+                <a id = "about_me" href = "index.html"> About Me</a>
+                <button id = "mywork_dd_btn" onclick="excMyWorkDD()">My Work</button>
                 <a id = "contact" href="contact.html"> Contact Me </a>
             </nav>
         </div>
-        <div class="contact_form_group">
-        
+
+        <div id = "mywork_dd">
+            <a>Experience/Projects/Skills</a>
+            <a>Resume Download</a>
+        </div>
+
+        <div class="contact_form_group">   
             <div class="contact_form_name">
                 <form id="form_name">
-                    <label> First Name </label>
-                    <input type="text">
-                    <label> Last Name </label>
-                    <input type="text"> 
+                    <label> First Name *</label>
+                    <input id = "firstname_input" type="text">
+                    <label> Last Name *</label>
+                    <input id = "lastname_input" type="text"> 
                 </form>
             </div>
             <div class="contact_form_email">
-                <form id="form_email">
-                    <label> Email </label>
-                    <input type = "text">
+                <form id="contact_email">
+                    <label><br> Email *<br></label>
+                    <input id = "email_input" type = "text">
                 </form>
             </div>
             <div class="contact_form_msg">
                 <form id="form_msg">
-                    <label> Message </label>
-                    <input type="text">  
+                    <label><br> Message *<br></label>
+                    <input id = "msg_input" type="text">  
                 </form>
             </div>
+            <br>
+            <button id = "contact_send_btn" onclick="excSendMsg()">Send</button>
         </div>
+
+
         <footer id = "footer"></footer>
     </body>
 </html>

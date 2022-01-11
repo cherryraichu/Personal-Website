@@ -54,24 +54,33 @@ body{
 
 #mywork_dd
 {
-    background-color: rgb(146, 144, 144);
+    background-color: whitesmoke;
     position: fixed;
     margin-top: 0;
     padding-top: 0;
     top: 6.5vh;
     left: 42vw;
     width: 17vw;
-    border-radius: 5px;
+    border-radius: 2px;
 }
 
+#mywork_dd a:hover {
+    background-color: rgb(194, 192, 192);
+}
+  
 #mywork_dd a
 {
     display: block;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    padding-left: 2vh;
+    padding-right: 2vh;
 }
+
 
 /*This is not working for some reason*/
 /*CSS for < 600px Width Screens (Mobile,Tablets,etc)*/
-@media screen and (max-width:600px)
+@media screen and (max-width:600px), screen and (max-width:900px)
 {
     body{
         font-size: 2vw;
@@ -80,8 +89,15 @@ body{
     {
         display: block;
     }
-    #mywork_dd 
+    #mywork_dd_btn
     {
         font-size: 2vw;
+    }
+    #mywork_dd 
+    {
+        width: 35vw;
+        top: 7.5vh;
+        left: 37vw;
+        position: absolute;
     }
 }

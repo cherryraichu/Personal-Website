@@ -1,5 +1,7 @@
 
 /*CSS for Content Specific to Contact Me Page*/
+
+
 .contact_form_group
 {
 
@@ -9,8 +11,36 @@
     background-color: whitesmoke;
     box-shadow: 2px 4px 8px 3px rgb(146, 144, 144);
     border-radius: 15px;
-    position: center;
+    position: fixed;
     width: 75vh;
     padding: 5vh;
+    left:29vw;
+    right: 29vw;
 
+}
+
+#firstname_input, #lastname_input
+{
+    width: 10vw;
+}
+
+#msg_input
+{
+    width: 36vw;
+    height: 20vh;
+}
+
+#email_input
+{
+    width: 36vw;
+}
+
+#contact_send_btn
+{
+    font-family: monospace;
+    width: 30vw;
+    position: fixed;
+    left: 35vw;
+    right: 37vw;
+    top: 64vh;
 }

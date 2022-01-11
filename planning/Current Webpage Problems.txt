@@ -1,8 +1,13 @@
 Current Webpage Problems
 
-Still have responsiveness bugs for manipulating vertical height of index.html
+Main Issues:
+Responsiveness
+ - Need to fix my work drop down changing positions 
 Finishing Form
 Finshing dropdown
+Formatting of the nav bar is inconsistent from index to contact me page
+
+
 
 - Responsiveness
     https://www.pixelconverter.com/px-to-vh-converter/
