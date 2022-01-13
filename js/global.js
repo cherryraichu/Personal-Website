@@ -9,6 +9,7 @@ function showMyWorkDD(event)
 //Closing "My Work" drop down if user clicks elsewhere on page 
 window.onclick = function(event)
 {
+    event.stopPropagation();
     showMyWorkDD(event);
 } 
 
