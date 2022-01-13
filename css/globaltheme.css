@@ -51,34 +51,37 @@ body{
     border: none;
     font-weight: 700;
 }
-
-#mywork_dd
+#mywork_dd /*Sets the dropdown to be hidden by default*/
 {
-    background-color: whitesmoke;
-    position: fixed;
-    margin-top: 0;
-    padding-top: 0;
-    top: 6.5vh;
-    left: 42vw;
-    width: 17vw;
-    border-radius: 2px;
+    display: none;
 }
 
-#mywork_dd a:hover {
-    background-color: rgb(194, 192, 192);
+#mywork_dd.show
+{
+   background-color: whitesmoke;
+    position: absolute;
+    margin-top: 0;
+    padding-top: 0;
+    top: 6vh;
+    left: 42vw;
+    width: 20vw;
+    border-radius: 2px;
+    display: flex;
+    flex-direction: column;
 }
   
 #mywork_dd a
 {
-    display: block;
+    padding: 0;
+    margin: 0;
     padding-top: 2vh;
-    padding-bottom: 2vh;
-    padding-left: 2vh;
-    padding-right: 2vh;
+    padding-bottom: 2vh; 
 }
 
+#mywork_dd.mywork_content a:hover { /*This isn't working*/
+    background-color: rgb(194, 192, 192);
+}
 
-/*This is not working for some reason*/
 /*CSS for < 600px Width Screens (Mobile,Tablets,etc)*/
 @media screen and (max-width:600px), screen and (max-width:900px)
 {
