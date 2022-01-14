@@ -1,5 +1,5 @@
 body{
-    background-image: url("/assets/plantsbackground.png");
+    background-image: url("/public/assets/plantsbackground.png");
     background-size: cover;
     height: 100vh;
 

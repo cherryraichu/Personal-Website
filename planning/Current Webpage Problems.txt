@@ -6,6 +6,7 @@ Responsiveness
  - Mobile font too small?
 Finishing Form
 Finshing dropdown
+- Dropdown Reference: https://stackoverflow.com/questions/35915495/how-to-close-drop-down-by-clicking-anywhere-on-page
 Formatting of the nav bar is inconsistent from index to contact me page
 
 
