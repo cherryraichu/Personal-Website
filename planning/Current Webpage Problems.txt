@@ -1,5 +1,10 @@
 Current Webpage Problems
 
+Known Bugs:
+Windows Edge won't download background image for some reason
+Dropdown should not pull up drop down by clicking the screen (only close drop down)
+Delete Netlify
+
 Main Issues:
 Responsiveness
  - Need to fix my work drop down changing positions 

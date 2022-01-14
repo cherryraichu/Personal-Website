@@ -1,4 +1,3 @@
-
 //Show links if user clicks "My Work" drop down button
 function showMyWorkDD(event)
 {
