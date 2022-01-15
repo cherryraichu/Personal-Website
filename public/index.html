@@ -11,7 +11,11 @@
         <link rel = "stylesheet" type = "text/css" href = "css/index.css">
         <script type = "text/Javascript" src = "js/global.js"></script>
 
-        <!--*(WIP) Cross Browser Tags*-->
+        <!--*Cross Browser Tags*-->
+        <!--[if lt IE 9]>
+            <script src = "//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js">
+            </script>
+        <![endif]-->
     </head>
 
     <!--* Webpage Contents *-->
@@ -31,11 +35,11 @@
         <div class="home_content">
 
             <div class="polaroid_descr_box">
-                <div id="descr_text"> <!--Might want to change this to a class later--> 
+                <div> <span id="descr_text">
                     <pre>Last Updated: December 2021<br><br><br>Hello, my name is Annie Zhou!</pre>
                     <pre>I'm an aspiring SWE and sophomore Computer Science student<br><br>at the University of Maryland, College Park.</pre>
                     <pre>Some of my interests of study are web-development and computer graphics</pre>
-                </div>
+                </span> </div>
             </div>
 
             <div class = "polaroid_profile">

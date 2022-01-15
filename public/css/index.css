@@ -18,7 +18,7 @@
     background-color: whitesmoke;
     box-shadow: 2px 4px 8px 3px rgb(146, 144, 144);
     order: 2;
-    border-radius: 15px;
+    border-radius: 1vw;
     max-width: inherit;
     height: auto;
     padding-left: 5vh;
@@ -36,8 +36,8 @@
     height: auto;
     background-color:whitesmoke;
     box-shadow: 2px 4px 8px 3px rgb(146, 144, 144);
-    border-radius: 15px;
-    border: solid whitesmoke 20px;
+    border-radius: 1vw;
+    border: solid whitesmoke 3vw;
 }
 
 .polaroid_pic img { 
@@ -47,31 +47,40 @@
 }
 
 /*CSS for < 900px Width and 800px > height screens (Mobile,Tablets, etc)*/
-@media screen and (max-width: 900px), screen and (min-height: 800px)
+@media screen and (max-width: 950px) /*, screen and (min-height: 801px)*/
 {
     .home_content
     {
         flex-direction: column;
+        position: absolute;
+        gap: 4vh;
     }
-    .polaroid_descr_box .polaroid_profile
+    .polaroid_descr_box, .polaroid_profile
     {
         text-align: center;
+        left: 2vw;
+    }
+    .polaroid_descr_box
+    {
+        top: 51vh;
         width: fit-content;
-        position: fixed;
-        
+    }
+    #descr_text
+    {
+        font-size: 2vw;
     }
     .polaroid_profile img
     {
-        height: 40vw;
-        width: 40vw;
-        /*need to center profile pic, will get to later*/   
+        height: 30vh;
+        width: 30vh;   
     }
     .polaroid_profile
     {
-        width: 40vw;
+        padding-top: 1vh;
+        padding-bottom: 1vh;
+        width: 32vh;
+        top: 15vh;
     }
 }
-
-/*CSS for > ___ Screens (Some elements need to be modified for responsiveness)*/
 
 

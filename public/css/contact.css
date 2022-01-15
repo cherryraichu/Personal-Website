@@ -44,3 +44,9 @@
     right: 37vw;
     top: 64vh;
 }
+
+/*CSS for < 600px Width Screens (Mobile,Tablets,etc)*/
+@media screen and (max-width:600px), screen and (max-width:900px)
+{
+    
+}

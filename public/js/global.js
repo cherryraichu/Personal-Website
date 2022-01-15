@@ -1,3 +1,5 @@
+var navbarClick = document.querySelector(".topnav");
+
 //Show links if user clicks "My Work" drop down button
 function showMyWorkDD(event)
 {
@@ -6,9 +8,17 @@ function showMyWorkDD(event)
 }
 
 //Closing "My Work" drop down if user clicks elsewhere on page 
-window.onclick = function(event)
+document.addEventListener("click", function(event)
 {
-    event.stopPropagation();
-    showMyWorkDD(event);
-} 
+    if (event.target.closest(".topnav") ) 
+    {
+        return;
+    } 
+    else
+    {
+        event.stopPropagation();
+        showMyWorkDD(event);
+    }
+});
+
 
