@@ -93,6 +93,12 @@ body{
     {
         font-size: 3vw;
     }
+    .topnav
+    {
+        width: 100vw;
+        padding-left: 0;
+        padding-right: 0;
+    }
     .topnav a
     {
         display: block;

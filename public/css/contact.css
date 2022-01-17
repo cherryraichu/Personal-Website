@@ -1,7 +1,6 @@
 
 /*CSS for Content Specific to Contact Me Page*/
 
-
 .contact_form_group
 {
 
@@ -11,8 +10,8 @@
     background-color: whitesmoke;
     box-shadow: 2px 4px 8px 3px rgb(146, 144, 144);
     border-radius: 15px;
-    position: fixed;
-    width: 75vh;
+    position: absolute;
+    width: /*75vh*/ fit-content;
     padding: 5vh;
     left:29vw;
     right: 29vw;
@@ -24,10 +23,18 @@
     width: 10vw;
 }
 
+
 #msg_input
 {
     width: 36vw;
     height: 20vh;
+    overflow: auto;
+    cursor
+}
+#msg_label::after, #msg_label::before, #email_label::after
+{
+    content: "\a";
+    white-space: pre;
 }
 
 #email_input
@@ -39,14 +46,56 @@
 {
     font-family: monospace;
     width: 30vw;
-    position: fixed;
-    left: 35vw;
+    left: 7vw;
     right: 37vw;
-    top: 64vh;
+    top: 26vh;
 }
 
 /*CSS for < 600px Width Screens (Mobile,Tablets,etc)*/
 @media screen and (max-width:600px), screen and (max-width:900px)
 {
-    
+    .contact_form_group
+    {
+        width: 60vw;
+        left: 8vw;
+        right: 4vw;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        height: 48vh;
+    }
+    #firstname_input, #lastname_input, #email_input
+    {
+        width: 37vw;
+        position: absolute;
+        display:block;
+        left: 5vh;
+    }
+    #lastname_label::before
+    {
+        content: "\a\a\a";
+        white-space: pre;
+    }
+    #email_label::before, #msg_label::before
+    {
+        content: "\a\a";
+        white-space: pre;
+    }
+    #email_label::after
+    {
+        content: "";
+        white-space: pre;
+    }
+    #contact_send_btn
+    {
+        top: 52vh;
+        left: 5vh;
+        font-size: 3vw;
+        position: absolute;
+    }
+    #msg_input
+    {
+        width: 55vw;
+        height: 24vh;
+    }
 }

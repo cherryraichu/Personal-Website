@@ -3,6 +3,7 @@
     <!--* Webpage Metadata*-->
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1"> <!--*For mobile responiveness*-->
         <title>Annie Zhou</title>
         
         <!--*Importing the CSS and Javascript Code *-->
@@ -27,8 +28,8 @@
                 <a id = "contact" href="contact.html"> Contact Me </a>
             </nav>
             <div id = "mywork_dd" class=" mywork_content">
-                <a>Experience/Projects/Skills</a>
-                <a >Resume Download</a>
+                <a href="portfolio.html">Experience/Projects/Skills</a>
+                <a href="resumedownload.html">Resume Download</a>
             </div>
         </div>
 
@@ -37,26 +38,25 @@
                 <form id="form_name">
                     <label> First Name *</label>
                     <input id = "firstname_input" type="text">
-                    <label> Last Name *</label>
+                    <label><span id = "lastname_label"> Last Name *</span></label>
                     <input id = "lastname_input" type="text"> 
                 </form>
             </div>
             <div class="contact_form_email">
                 <form id="contact_email">
-                    <label><br> Email *<br></label>
+                    <label><span id = "email_label"> Email *</span></label>
                     <input id = "email_input" type = "text">
                 </form>
             </div>
             <div class="contact_form_msg">
                 <form id="form_msg">
-                    <label><br> Message *<br></label>
-                    <input id = "msg_input" type="text">  
+                    <label><span id = "msg_label"> Message *</span></label>
+                    <textarea id = "msg_input" type="text"> </textarea> 
                 </form>
             </div>
             <br>
             <button id = "contact_send_btn" onclick="excSendMsg()">Send</button>
         </div>
-
 
         <footer id = "footer"></footer>
     </body>
