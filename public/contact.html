@@ -34,28 +34,22 @@
         </div>
 
         <div class="contact_form_group">   
-            <div class="contact_form_name">
-                <form id="form_name">
-                    <label> First Name *</label>
-                    <input id = "firstname_input" type="text">
-                    <label><span id = "lastname_label"> Last Name *</span></label>
-                    <input id = "lastname_input" type="text"> 
-                </form>
-            </div>
-            <div class="contact_form_email">
-                <form id="contact_email">
+            <form id="email_form" action="https://formsubmit.co/a.zhou4847@gmail.com" method="post">
+                <div class="contact_form_name">
+                    <label> Full Name *</label>
+                    <input id = "fullname_input" type="text">
+                </div>
+                <div class="contact_form_email">
                     <label><span id = "email_label"> Email *</span></label>
-                    <input id = "email_input" type = "text">
-                </form>
-            </div>
-            <div class="contact_form_msg">
-                <form id="form_msg">
+                    <input id = "email_input" name = "email" type = "email">
+                </div>
+                <div class="contact_form_msg">
                     <label><span id = "msg_label"> Message *</span></label>
-                    <textarea id = "msg_input" type="text"> </textarea> 
-                </form>
-            </div>
-            <br>
-            <button id = "contact_send_btn" onclick="excSendMsg()">Send</button>
+                    <textarea id = "msg_input" name = "message" type="text"> </textarea> 
+                </div>
+                <br>
+                <button id = "contact_send_btn" type = "button" onclick="submitForm()">Send</button>
+            </form>
         </div>
 
         <footer id = "footer"></footer>

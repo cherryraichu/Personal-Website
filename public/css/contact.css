@@ -18,7 +18,7 @@
 
 }
 
-#firstname_input, #lastname_input
+#fullname_input /*, #lastname_input*/
 {
     width: 10vw;
 }
@@ -29,12 +29,13 @@
     width: 36vw;
     height: 20vh;
     overflow: auto;
-    cursor
+
 }
+
 #msg_label::after, #msg_label::before, #email_label::after
 {
     content: "\a";
-    white-space: pre;
+    white-space:pre;
 }
 
 #email_input
@@ -64,7 +65,7 @@
         position: absolute;
         height: 48vh;
     }
-    #firstname_input, #lastname_input, #email_input
+    #fullname_input, #email_input
     {
         width: 37vw;
         position: absolute;

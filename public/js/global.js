@@ -22,7 +22,7 @@ document.addEventListener("click", function(event)
     }
     else 
     {
-        //Toggle dropdown
+        //Else toggle dropdown
         event.stopPropagation();
         showMyWorkDD(event);
     }

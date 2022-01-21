@@ -1,9 +1,8 @@
 Current Webpage Problems
 
-Known Bugs:
-Windows Edge won't download background image for some reason
-Dropdown should not pull up drop down by clicking the screen (only close drop down)
-Delete Netlify
+Few more responsiveness Bugs
+Sending Email (Research SMTP Servers)
+
 
 Main Issues:
 Responsiveness
@@ -17,7 +16,5 @@ Formatting of the nav bar is inconsistent from index to contact me page
 
 Websight Deployment:
 https://app.pluralsight.com/course-player?clipId=60793cbf-2889-4709-82e7-6be6a5c43e67
-https://app.netlify.com/sites/elastic-meninsky-7a909e/settings/deploys
-
 
 
