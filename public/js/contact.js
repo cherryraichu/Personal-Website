@@ -12,13 +12,11 @@ function validFormInput()
     if (!hasNullInput && !hasUndefinedInput)
     {
         var allWhiteSpace = new RegExp("/^\s*$/");
-       
         var hasEmptyInput = (myForm['fullname_input'].value === '' || 
         myForm['email_input'].value === '' || myForm['msg_input'].value === '')? true: false;
         var hasAllWhiteSpace = (allWhiteSpace.test(myForm['fullname_input'].value) || 
         allWhiteSpace.test(myForm['email_input'].value) || allWhiteSpace.test(myForm['msg_input'].value))? true: false;
 
-        //console.log(validEmail.test(myForm['email_input']));
         if (!hasEmptyInput && !hasAllWhiteSpace && myForm['email_input'].value.includes('@')) return true;
     }
     return false;    

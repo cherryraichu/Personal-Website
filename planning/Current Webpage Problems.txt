@@ -1,8 +1,9 @@
 Current Webpage Problems
 
 Few more responsiveness Bugs
-Sending Email (Research SMTP Servers)
+Future Upgrades:
 
+Add more complex regex expressions for input validation
 
 Main Issues:
 Responsiveness

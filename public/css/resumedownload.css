@@ -1,0 +1,28 @@
+.resume_download_block
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: center;
+    margin: 0;
+    border: 0;
+    margin-top: 20vh;
+    margin-left: 28vw;
+    width: 45vw;
+    height: 31vw;
+
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    padding-left: 4vh;
+    background-color: whitesmoke;
+    box-shadow: 2px 4px 8px 3px rgb(146, 144, 144);
+    border-radius: 1vw;
+
+    gap: 2vw;
+}
+
+/*CSS for < 900px Width and 800px > height screens (Mobile,Tablets, etc)*/
+@media screen and (max-width: 950px) /*, screen and (min-height: 801px)*/
+{
+
+}
