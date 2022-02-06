@@ -25,4 +25,24 @@
 @media screen and (max-width: 950px) /*, screen and (min-height: 801px)*/
 {
 
+    .resume_download_block
+    {
+        flex-direction: column;
+        position: absolute;
+        gap: 4vh;
+        text-align: center;
+        width: 80vw;
+        height: 60vh;
+        padding-left: 4vw;
+        padding-right: 4vw;
+        left: -20vw;
+    }
+    #resume_preview
+    {
+        width: 70vw;
+        height: 45vh;
+        padding-left: 6vw;
+        padding-right: 6vw;
+    }
+
 }

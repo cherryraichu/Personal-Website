@@ -1,0 +1,46 @@
+.content_block
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: absolute;
+    margin-top: 20vh;
+    gap: 2vw;
+      
+    background-color: whitesmoke;
+    box-shadow: 2px 4px 8px 3px rgb(146, 144, 144);
+    border-radius: 1vw;
+    width: 75vw;
+    max-width: inherit;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+
+    left: 15vw;
+    right: 15vw;
+}
+
+/*Description Box CSS*/ 
+#descr_text
+{
+    top: 45vh;
+    color: #272928;
+    text-align: left;
+}
+
+/*CSS for < 900px Width and 800px > height screens (Mobile,Tablets, etc)*/
+@media screen and (max-width: 950px) /*, screen and (min-height: 801px)*/
+{
+    .content_block
+    {
+        flex-direction: column;
+        left: 8vw;
+        right: 4vw;
+        top: 10vh;
+        padding-left: 5vw;
+        padding-right: 5vw;
+    }
+    #descr_text
+    {
+        font-size: 2vw;
+    }
+}
